@@ -112,6 +112,11 @@ header .row nav a:hover {
 .video .video__head {
   margin-bottom: 20px;
 }
+.video .video__frame {
+  width: 74%;
+  height: 375px;
+  /*56.25*/
+}
 
 /*FOOTER*/
 footer .contacts {
@@ -135,6 +140,51 @@ footer .contacts .contacts__address-phone a {
 }
 
 /*MEDIA*/
+@media screen and (max-width: 1199px) {
+  /* NAVIGATION */
+  header .row .nav a {
+    font-size: 14px;
+  }
+
+  /*VIDEO*/
+  .video .video__frame {
+    height: 315px;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* NAVIGATION */
+  .nav {
+    display: block;
+    margin-top: 10px;
+  }
+
+  /*HEADER*/
+  header .header__logo {
+    text-align: center;
+    margin-left: -10px;
+  }
+
+  /*VIDEO*/
+  .video .video__frame {
+    height: 235px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /*ABOUT US*/
+  .aboutUs {
+    text-align: center;
+  }
+
+  /*PRICES*/
+  .prices {
+    text-align: center;
+  }
+
+  /*VIDEO*/
+  .video .video__frame {
+    height: 170px;
+  }
+}
 @media screen and (max-width: 575px) {
   /*HEADER*/
   header .container {
@@ -158,44 +208,20 @@ footer .contacts .contacts__address-phone a {
     margin-bottom: 0;
   }
 
+  /*VIDEO*/
+  .video .video__frame {
+    height: 125px;
+  }
+
   /*FOOTER*/
   footer .contacts {
     margin-bottom: 0;
     border-radius: 0;
   }
 }
-@media screen and (max-width: 767px) {
-  /*ABOUT US*/
-  .aboutUs {
-    text-align: center;
-  }
-
-  /*PRICES*/
-  .prices {
-    text-align: center;
-  }
-
-  /*VIDEO*/
-  .video {
-    display: none;
-  }
-}
-@media screen and (max-width: 991px) {
-  /* NAVIGATION */
-  .nav {
-    display: block;
-    margin-top: 10px;
-  }
-
-  header .header__logo {
-    text-align: center;
-    margin-left: -10px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  /* NAVIGATION */
-  header .row .nav a {
-    font-size: 14px;
+@media screen and (max-width: 400px) {
+  .video .video__frame {
+    height: 100px;
   }
 }
 
