@@ -114,8 +114,26 @@ header .row nav a:hover {
 }
 .video .video__frame {
   width: 74%;
-  height: 375px;
-  /*56.25*/
+  height: 420px;
+}
+
+/*LOCATION*/
+.location {
+  	/*h2 {
+  
+  	}*/
+}
+.location .row {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #fff;
+  border-radius: 4px;
+  text-align: center;
+}
+.location #map {
+  width: 100%;
+  height: 400px;
 }
 
 /*FOOTER*/
@@ -148,7 +166,7 @@ footer .contacts .contacts__address-phone a {
 
   /*VIDEO*/
   .video .video__frame {
-    height: 315px;
+    height: 350px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -166,7 +184,7 @@ footer .contacts .contacts__address-phone a {
 
   /*VIDEO*/
   .video .video__frame {
-    height: 235px;
+    height: 260px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -182,7 +200,8 @@ footer .contacts .contacts__address-phone a {
 
   /*VIDEO*/
   .video .video__frame {
-    height: 170px;
+    width: 80%;
+    height: 210px;
   }
 }
 @media screen and (max-width: 575px) {
@@ -200,7 +219,6 @@ footer .contacts .contacts__address-phone a {
   /*ABOUT US*/
   .main-article {
     border-radius: 0;
-    margin-bottom: 0;
   }
 
   /*PRICES*/
@@ -210,7 +228,13 @@ footer .contacts .contacts__address-phone a {
 
   /*VIDEO*/
   .video .video__frame {
-    height: 125px;
+    width: 100%;
+    height: 210px;
+  }
+
+  /*LOCATION*/
+  .location .row {
+    border-radius: 0;
   }
 
   /*FOOTER*/
@@ -221,7 +245,7 @@ footer .contacts .contacts__address-phone a {
 }
 @media screen and (max-width: 400px) {
   .video .video__frame {
-    height: 100px;
+    height: 140px;
   }
 }
 
