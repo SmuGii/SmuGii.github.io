@@ -89,9 +89,28 @@ header {
 
 .aboutUs {
 	.col {
+		h2 {
+			margin-bottom: 20px;
+		}
+		.aboutUs__logo {
+			text-transform: uppercase;
+			a {
+				color: #000;
+				text-decoration: none;
+				&:hover {
+					color: #8B56BE;
+				}
+			}
+		}
 		padding: 40px;
+		font-size:16px;
+		ul li {list-style-type: disc;}
 		.aboutUs__list {
 			margin-bottom: 15px;
+			.aboutUs__item {
+				margin-left: 20px;
+				padding-bottom: 5px;
+			}
 		}
 	}
 }
@@ -99,10 +118,30 @@ header {
 /*PRICES*/
 
 .prices {
+	text-align: center;
 	background-color: rgba(255,248,231,0.7); 
 	margin-bottom: 20px;
 	.col {
 		padding: 40px;
+		-webkit-overflow-scrolling: touch;
+	}
+	.prices__table {
+		margin: 0 auto;
+		table {
+			width: 100%;
+		    border: 1px solid black;
+		    border-collapse: collapse;
+		}
+		td {
+		    border: 1px solid black;
+		    border-collapse: collapse;
+		    padding: 10px;
+		}
+		th {
+		    border: 1px solid black;
+		    border-collapse: collapse;
+		    padding: 10px;
+		}
 	}
 }
 
@@ -212,6 +251,10 @@ footer {
 			width: 80%;
 			height: 210px;
 		}
+	}
+	table {
+		overflow: auto;
+		display: block;
 	}
 }
 
